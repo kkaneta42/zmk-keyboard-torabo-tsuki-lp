@@ -8,15 +8,9 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <1>;
-        };
-
         tab {
             bindings = <&kp TAB>;
-            key-positions = <24 25>;
+            key-positions = <25 26>;
         };
     };
 
