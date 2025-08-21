@@ -11,7 +11,7 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-            layers = <2>;
+            layers = <1>;
         };
 
         tab {
@@ -25,11 +25,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans            &trans    &trans    &trans         &trans                                            &trans       &trans  &trans     &trans    &trans                &trans
-&trans  &kp Q             &kp W     &kp E     &kp R          &kp T                                             &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
-&trans  &kp A             &kp S     &kp D     &kp F          &kp G        &trans                &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
-&trans  &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V          &kp B        &kp ESC               &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
-&trans  &lt 1 LCTRL       &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 2 SPACE  &mt ENTER LEFT_SHIFT  &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
+&trans  &trans       &trans    &trans    &trans         &trans                                            &trans       &trans  &trans     &trans    &trans                &trans
+&trans  &kp Q        &kp W     &kp E     &kp R          &kp T                                             &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
+&trans  &kp A        &kp S     &kp D     &kp F          &kp G        &trans                &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
+&trans  &lt 2 Z      &kp X     &kp C     &kp V          &kp B        &kp ESC               &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
+&trans  &lt 3 LCTRL  &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 1 SPACE  &mt ENTER LEFT_SHIFT  &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
             >;
         };
 
@@ -45,11 +45,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
+&trans  &trans            &trans            &trans      &trans      &trans                      &trans      &trans      &trans      &trans         &trans         &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)     &kp LS(N0)     &trans
+&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &trans      &trans      &trans      &kp LS(MINUS)  &kp LS(EQUAL)  &trans
+&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &trans      &trans      &trans      &kp LBKT       &kp RBKT       &trans
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &trans      &trans      &trans      &kp COMMA      &kp DOT        &trans
             >;
         };
 
