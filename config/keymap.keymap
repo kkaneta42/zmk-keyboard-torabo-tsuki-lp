@@ -19,11 +19,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans       &trans    &trans    &trans         &trans                                         &trans       &trans  &trans     &trans    &trans                &trans
-&trans  &kp Q        &kp W     &kp E     &kp R          &kp T                                          &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
-&trans  &kp A        &kp S     &kp D     &kp F          &kp G        &trans             &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
-&trans  &lt 2 Z      &kp X     &kp C     &kp V          &kp B        &mt LSHIFT ESCAPE  &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
-&trans  &lt 3 LCTRL  &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 1 SPACE  &kp ENTER          &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
+&trans  &trans            &trans    &trans    &trans         &trans                                         &trans       &trans  &trans     &trans    &trans                &trans
+&trans  &kp Q             &kp W     &kp E     &kp R          &kp T                                          &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
+&trans  &kp A             &kp S     &kp D     &kp F          &kp G        &trans             &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
+&trans  &lt 2 Z           &kp X     &kp C     &kp V          &kp B        &mt LSHIFT ESCAPE  &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
+&trans  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 1 SPACE  &kp ENTER          &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
             >;
         };
 
