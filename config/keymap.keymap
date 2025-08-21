@@ -25,11 +25,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans       &trans    &trans    &trans         &trans                                            &trans       &trans  &trans     &trans    &trans                &trans
-&trans  &kp Q        &kp W     &kp E     &kp R          &kp T                                             &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
-&trans  &kp A        &kp S     &kp D     &kp F          &kp G        &trans                &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
-&trans  &lt 2 Z      &kp X     &kp C     &kp V          &kp B        &kp ESC               &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
-&trans  &lt 3 LCTRL  &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 1 SPACE  &mt ENTER LEFT_SHIFT  &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
+&trans  &trans       &trans    &trans    &trans         &trans                                         &trans       &trans  &trans     &trans    &trans                &trans
+&trans  &kp Q        &kp W     &kp E     &kp R          &kp T                                          &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
+&trans  &kp A        &kp S     &kp D     &kp F          &kp G        &trans             &trans         &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
+&trans  &lt 2 Z      &kp X     &kp C     &kp V          &kp B        &mt LSHIFT ESCAPE  &kp MINUS      &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
+&trans  &lt 3 LCTRL  &kp LGUI  &kp LALT  &kp BACKSPACE  &lt 1 SPACE  &kp ENTER          &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
             >;
         };
 
@@ -45,11 +45,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                         &trans      &trans      &trans      &trans         &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)     &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &kp GRAVE  &trans      &kp LBKT    &kp RBKT    &kp LS(MINUS)  &kp LS(EQUAL)  &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans     &trans      &trans      &trans      &trans         &trans         &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans     &trans      &trans      &trans      &trans         &trans         &trans
+&trans  &trans            &trans            &trans      &trans      &trans                         &trans      &trans      &trans      &trans         &trans        &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)     &kp LS(N0)    &trans
+&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans     &kp N6      &kp N7      &kp N8      &kp N9         &kp N0        &trans
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &kp GRAVE  &kp LBKT    &kp RBKT    &kp BSLH    &kp LS(MINUS)  &kp RS(PLUS)  &trans
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans     &trans      &trans      &trans      &trans         &trans        &trans
             >;
         };
 
