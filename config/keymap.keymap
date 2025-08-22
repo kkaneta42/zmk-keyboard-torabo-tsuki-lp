@@ -80,8 +80,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
-            // トラックボールの移動をマウススクロールに変換（引数なしで二軸スクロールを有効化）
-            sensor-bindings = <&msc>;
+            // トラックボールの移動をスクロールキーに変換（上下）
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 };
