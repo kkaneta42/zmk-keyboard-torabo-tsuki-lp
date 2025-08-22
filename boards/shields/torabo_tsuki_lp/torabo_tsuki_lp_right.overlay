@@ -2,10 +2,26 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+&zip_temp_layer {
+    excluded-positions = <
+        8  // UP_ARROW (1行目)
+        20 // LEFT_ARROW (3行目)
+        22 // DOWN_ARROW (3行目)
+        23 // RIGHT_ARROW (3行目)
+        24 // MB1 (左クリック)
+        25 // MB2 (右クリック)
+        26 // MB3 (中クリック)
+        27 // UP_ARROW (4行目)
+        28 // RIGHT_ARROW (4行目)
+        29 // LEFT_ARROW (5行目)
+        30 // DOWN_ARROW (5行目)
+    >;
+};
+
 &trackball_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 350>;
+        <&zip_temp_layer 1 1000>;
 };
 
 &size_s_transform {
