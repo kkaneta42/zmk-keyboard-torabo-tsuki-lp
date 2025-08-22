@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+
+# Build outputs
+build/
+firmware/
+*.uf2
+
+# West workspace (will be created in container)
+.west/
+modules/
+tools/
+zephyr/
+
+# Documentation
+*.md
+LICENSE
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore

@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  zmk-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zmk-torabo-tsuki-lp-build
+    volumes:
+      # Mount the current directory for live code changes
+      - ./config:/workspace/config:ro
+      - ./boards:/workspace/boards:ro
+      - ./src:/workspace/src:ro
+      - ./build.yaml:/workspace/build.yaml:ro
+      # Output directory for firmware
+      - ./firmware:/workspace/firmware
+      # Cache directories for faster rebuilds
+      - zmk-west-cache:/workspace/.west
+      - zmk-build-cache:/workspace/build
+    environment:
+      - BOARD=bmp_boost
+      - SHIELD=torabo_tsuki_lp_left
+    working_dir: /workspace
+    command: /bin/bash -c "echo 'ZMK build environment ready. Use docker-compose run zmk-build ./build.sh'"
+
+volumes:
+  zmk-west-cache:
+  zmk-build-cache:
