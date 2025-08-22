@@ -16,6 +16,10 @@
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
+        bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <28 29>;
+        };
     };
 
     mkp_input_listener {
