@@ -55,7 +55,7 @@
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                  &trans        &trans    &trans        &trans    &trans         &trans
 &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                  &trans        &trans    &kp UP_ARROW  &trans    &trans         &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &kp LG(LEFT)  &mkp MB1  &mkp MB2      &mt 3 MB3  &kp LG(RIGHT)  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &kp LG(LEFT)  &mkp MB1  &mkp MB2      &lt 3 &mkp MB3  &kp LG(RIGHT)  &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans        &trans    &kp DOWN      &trans    &trans         &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans        &trans    &trans        &trans    &trans         &trans
             >;
@@ -80,8 +80,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
-            // トラックボールの移動をスクロールに変換
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            // トラックボールの移動をマウススクロールに変換（引数なしで二軸スクロールを有効化）
+            sensor-bindings = <&msc>;
         };
     };
 };
