@@ -53,41 +53,37 @@
 
         main {
             bindings = <
-&trans  &trans     &trans     &trans    &trans         &trans                           &trans       &trans  &trans     &trans    &trans                &trans
-&trans  &kp Q      &kp W      &kp E     &kp R          &kp T                            &kp Y        &kp U   &kp I      &kp O     &kp P                 &trans
-&trans  &kp A      &kp S      &kp D     &kp F          &kp G      &trans     &trans     &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
-&trans  &lt 2 Z    &kp X      &kp C     &kp V          &kp B      &kp LGUI   &kp MINUS  &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp BACKSPACE  &kp SPACE  &kp ENTER  &kp BSPC   &lt 1 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
+&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
+&lt 2 Z &kp X &kp C &kp V &kp B &kp LGUI &kp MINUS &kp N &kp M &kp COMMA &kp DOT &mt RIGHT_SHIFT FSLH
+&kp LSHFT &kp LCTRL &kp LALT &kp BACKSPACE &kp SPACE &kp ENTER &kp BSPC &lt 1 ENTER &kp RGUI &kp RCTRL
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                  &trans        &trans    &trans        &trans    &trans         &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                  &trans        &trans    &kp UP_ARROW  &trans    &trans         &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &kp LG(LEFT)  &mkp MB1  &mkp MB2      &lt_scroll 3 MB3  &kp LG(RIGHT)  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans        &trans    &kp DOWN      &trans    &trans         &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans        &trans    &trans        &trans    &trans         &trans
+&none &none &none &none &none &none &none &none &none &none
+&none &none &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none &none &none &kp UP_ARROW &none
+&none &none &none &none &none &none &none &kp LG(LEFT) &mkp MB1 &mkp MB2 &lt_scroll 3 MB3 &kp LG(RIGHT)
+&none &none &none &none &none &none &none &none &kp DOWN &none
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                         &trans      &trans      &trans      &trans         &trans        &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)     &kp LS(N0)    &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans     &kp N6      &kp N7      &kp N8      &kp N9         &kp N0        &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &kp GRAVE  &kp LBKT    &kp RBKT    &kp BSLH    &kp LS(MINUS)  &kp RS(PLUS)  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans     &trans      &trans      &trans      &trans         &trans        &trans
+&kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
+&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+&kp GRAVE &kp LBKT &kp RBKT &kp BSLH &kp LS(MINUS) &kp RS(PLUS) &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
             >;
         };
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
             >;
             
             // トラックボールの移動をスクロールキーに変換（上下）
