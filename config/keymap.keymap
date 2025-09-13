@@ -59,7 +59,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans          &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans          &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MB1        &mkp MB2      &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MB1        &mkp MB2      &mo 3      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans     &trans  &trans
             >;
         };
@@ -80,12 +80,11 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            // トラックボールの移動をマウススクロールに変換（Keyball39スタイル）
-
-            sensor-bindings = <&scroll_encoder>;
+            // トラックボールの移動をマウススクロールに変換（Logicoolスタイル）
+            // input processorの設定により自動的にスクロールモードになる
         };
 
         layer_4 {
