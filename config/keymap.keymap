@@ -37,21 +37,21 @@
 
         main {
             bindings = <
-&trans  &trans     &trans     &trans    &trans         &trans                           &trans     &trans  &trans     &trans    &trans             &trans
-&trans  &kp Q      &kp W      &kp E     &kp R          &kp T                            &kp Y      &kp U   &kp I      &kp O     &kp P              &trans
-&trans  &kp A      &kp S      &kp D     &kp F          &kp G      &trans     &trans     &kp H      &kp J   &kp K      &kp L     &kp SEMI           &trans
-&trans  &lt 2 Z    &kp X      &kp C     &kp V          &kp B      &kp LGUI   &kp MINUS  &kp N      &kp M   &kp COMMA  &kp DOT   &mt QUESTION FSLH  &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp BACKSPACE  &kp SPACE  &kp ENTER  &kp LGUI   &kp LSHFT  &trans  &trans     &kp RGUI  &kp RCTRL          &trans
+&trans  &trans   &trans  &trans    &trans         &trans                                                   &trans     &trans  &trans     &trans    &trans             &trans
+&trans  &kp Q    &kp W   &kp E     &kp R          &kp T                                                    &kp Y      &kp U   &kp I      &kp O     &kp P              &trans
+&trans  &kp A    &kp S   &kp D     &kp F          &kp G                 &trans                  &trans     &kp H      &kp J   &kp K      &kp L     &kp SEMI           &trans
+&trans  &lt 2 Z  &kp X   &kp C     &kp V          &kp B                 &kp ESCAPE              &kp MINUS  &kp N      &kp M   &kp COMMA  &kp DOT   &mt QUESTION FSLH  &trans
+&trans  &trans   &trans  &kp LALT  &kp BACKSPACE  &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL ENTER  &kp LGUI   &kp LSHFT  &trans  &trans     &kp RGUI  &kp RCTRL          &trans
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                  &trans    &trans    &trans        &trans    &trans    &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                  &trans    &trans    &kp UP_ARROW  &trans    &trans    &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB2      &mkp MB3  &mkp MB5  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans    &kp DOWN      &trans    &trans    &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans    &trans        &trans    &trans    &trans
+&trans  &trans  &trans          &trans         &trans           &trans                  &trans    &trans    &trans        &trans    &trans    &trans
+&trans  &trans  &trans          &kp PAGE_UP    &trans           &trans                  &trans    &trans    &kp UP_ARROW  &trans    &trans    &trans
+&trans  &trans  &kp LEFT_ARROW  &kp PAGE_DOWN  &kp RIGHT_ARROW  &trans  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB2      &mkp MB3  &mkp MB5  &trans
+&trans  &trans  &trans          &trans         &trans           &trans  &trans  &trans  &trans    &trans    &kp DOWN      &trans    &trans    &trans
+&trans  &trans  &trans          &trans         &trans           &trans  &trans  &trans  &trans    &trans    &trans        &trans    &trans    &trans
             >;
         };
 
