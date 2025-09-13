@@ -32,12 +32,6 @@
         };
     };
 
-    mkp_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&mkp>;
-        input-processors = <&zip_temp_layer 3 180>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
