@@ -46,11 +46,11 @@
 
         main {
             bindings = <
-&trans  &trans   &trans         &trans    &trans         &trans                                                              &trans         &trans  &trans     &trans    &trans             &trans
-&trans  &kp Q    &kp W          &kp E     &kp R          &kp T                                                               &kp Y          &kp U   &kp I      &kp O     &kp P              &trans
-&trans  &kp A    &kp S          &kp D     &kp F          &kp G                   &trans                  &trans              &kp H          &kp J   &kp K      &kp L     &kp MINUS          &trans
-&trans  &lt 2 Z  &kp X          &kp C     &kp V          &kp B                   &kp ESCAPE              &kp SEMI            &kp N          &kp M   &kp COMMA  &kp DOT   &mt QUESTION FSLH  &trans
-&trans  &trans   &kp LC(SPACE)  &kp LALT  &kp BACKSPACE  &mt LEFT_COMMAND SPACE  &mt LEFT_CONTROL ENTER  &lt 3 LEFT_COMMAND  &mt LSHFT TAB  &trans  &trans     &kp RGUI  &kp RCTRL          &trans
+&trans  &trans   &trans         &trans    &trans         &trans                                                            &trans         &trans  &trans     &trans    &trans             &trans
+&trans  &kp Q    &kp W          &kp E     &kp R          &kp T                                                             &kp Y          &kp U   &kp I      &kp O     &kp P              &trans
+&trans  &kp A    &kp S          &kp D     &kp F          &kp G                   &trans                  &trans            &kp H          &kp J   &kp K      &kp L     &lt 3 MINUS        &trans
+&trans  &lt 2 Z  &kp X          &kp C     &kp V          &kp B                   &kp ESCAPE              &kp SEMI          &kp N          &kp M   &kp COMMA  &kp DOT   &mt QUESTION FSLH  &trans
+&trans  &trans   &kp LC(SPACE)  &kp LALT  &kp BACKSPACE  &mt LEFT_COMMAND SPACE  &mt LEFT_CONTROL ENTER  &kp LEFT_COMMAND  &mt LSHFT TAB  &trans  &trans     &kp RGUI  &kp RCTRL          &trans
             >;
         };
 
