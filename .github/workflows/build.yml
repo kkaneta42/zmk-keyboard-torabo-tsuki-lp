@@ -38,7 +38,7 @@ jobs:
 
     env:
       ZMK_CONFIG: ${{ github.workspace }}/config
-      # 追加モジュールとしてリポジトリ直下を認識させる
+      # 直下の zephyr/module.yml をモジュールとして読ませる
       ZEPHYR_EXTRA_MODULES: ${{ github.workspace }}
       # ccache
       CCACHE_DIR: ${{ github.workspace }}/.ccache
@@ -80,6 +80,8 @@ jobs:
 
       - name: West init & update
         run: |
+          # ここで既存の .west を削除して再初期化できるようにする
+          rm -rf .west
           west init -l config
           west update
           west zephyr-export
