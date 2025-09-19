@@ -10,7 +10,7 @@
     // スクロールモード: layer 3がアクティブな時にXY移動をスクロールに変換
     scroll_mode {
         layers = <3>;
-        // スクロール速度を25%にスケールし、縦方向の向きを反転してからスクロールイベントに変換
-        input-processors = <&zip_xy_scaler 1 4>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>;
+        // スクロール速度を12.5%にスケールし、縦方向の向きを反転してからスクロールイベントに変換
+        input-processors = <&zip_xy_scaler 1 8>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>;
     };
 };
