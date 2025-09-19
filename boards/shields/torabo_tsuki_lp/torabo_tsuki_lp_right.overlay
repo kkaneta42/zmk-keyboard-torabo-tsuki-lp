@@ -10,7 +10,8 @@
     // Scroll mode: Convert XY motion to scroll when layer 3 is active
     scroll_mode {
         layers = <3>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        // Scroll speed scaled to 25% and vertical axis inverted before mapping to scroll events
+        input-processors = <&zip_xy_scaler 1 4>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>;
     };
 };
 
