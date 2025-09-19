@@ -9,17 +9,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    # 事前にツールチェーン入りの公式イメージを使用（セットアップ時間を削減）
     container: zmkfirmware/zmk-build-arm:stable
-    # もし Docker Hub が使えない場合の代替:
-    # container: ghcr.io/zmkfirmware/zmk-build-arm:stable
 
     strategy:
       fail-fast: false
       matrix:
         include:
-          # NOTE: board はあなたのMCUボードに合わせて変更可（例: nice_nano_v2 など）
           - board: bmp_boost
             shield: torabo_tsuki_lp_left
             snippet: studio-rpc-usb-uart
@@ -43,6 +38,9 @@ jobs:
 
     env:
       ZMK_CONFIG: ${{ github.workspace }}/config
+      # 追加モジュールとしてリポジトリ直下を認識させる
+      ZEPHYR_EXTRA_MODULES: ${{ github.workspace }}
+      # ccache
       CCACHE_DIR: ${{ github.workspace }}/.ccache
       CCACHE_COMPRESS: "1"
       CCACHE_MAXSIZE: "200M"
@@ -60,7 +58,6 @@ jobs:
             tools
             .west
             ~/.cache/zephyr
-          # ユーザー設定の west manifest を鍵にして依存を安定キャッシュ
           key: ${{ runner.os }}-zephyr-${{ hashFiles('config/west.yml') }}
           restore-keys: |
             ${{ runner.os }}-zephyr-
@@ -74,7 +71,7 @@ jobs:
             ${{ runner.os }}-ccache-${{ matrix.board }}-${{ matrix.shield }}-
             ${{ runner.os }}-ccache-
 
-      - name: Install west (if missing)
+      - name: Ensure west
         run: |
           if ! command -v west >/dev/null 2>&1; then
             python3 -m pip install --user west
@@ -95,7 +92,7 @@ jobs:
             SNIPPET_OPT="-DSNIPPET=${{ matrix.snippet }}"
           fi
           mkdir -p "${{ matrix.build_dir }}"
-          west build -d "${{ matrix.build_dir }}" -s zmk/app -b "${{ matrix.board }}" -- \
+          west build -p -d "${{ matrix.build_dir }}" -s zmk/app -b "${{ matrix.board }}" -- \
             -DSHIELD="${{ matrix.shield }}" \
             ${SNIPPET_OPT} \
             -DZMK_CONFIG="${{ env.ZMK_CONFIG }}" \
