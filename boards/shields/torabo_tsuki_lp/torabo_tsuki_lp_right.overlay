@@ -5,7 +5,7 @@
 &trackball_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 150>;
+        <&zip_temp_layer 1 200>;
 
     // Scroll mode: Convert XY motion to scroll when layer 3 is active
     scroll_mode {
